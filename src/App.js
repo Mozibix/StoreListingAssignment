@@ -1,18 +1,12 @@
 import React from "react";
 
-import Hotels from "./pages/Hotels"
-
-
-
+import Hotels from "./pages/Hotels";
 
 function App() {
   return (
-    
-      <div>
-       
+    <div>
       <Hotels />
-      </div>
-   
+    </div>
   );
 }
 
