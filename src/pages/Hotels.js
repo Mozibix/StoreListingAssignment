@@ -84,26 +84,27 @@ class Hotels extends React.Component {
                 <option value="none" disabled hidden>
                   None
                 </option>
-                <option class="sort-option" value="name">
+                <option className="sort-option" value="name">
                   name{" "}
                 </option>
-                <option class="sort-option" value="veg">
+                <option className="sort-option" value="veg">
                   vegetarian
                 </option>
-                <option class="sort-option" value="non-veg">
+                <option className="sort-option" value="non-veg">
                   non-vegetarian{" "}
                 </option>
-                <option class="sort-option" value="price">
+                <option className="sort-option" value="price">
                   Price{" "}
                 </option>
-                <option class="sort-option" value="rating">
+                <option className="sort-option" value="rating">
                   Rating{" "}
                 </option>
               </select>
             </p>
           </div>
-          {this.state.list.map((x) => (
+          {this.state.list.map((x, key) => (
             <RestaurantCard
+              key={key}
               thumbnail_image={x.img_url}
               name={x.name}
               rating={x.rating}
